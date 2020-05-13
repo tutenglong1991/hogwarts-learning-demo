@@ -68,6 +68,7 @@ class TestCalc:
             elif step == "add2":
                 assert self.calc.add2(data) == r
 
+
 class Demo:
     kind = 0
 

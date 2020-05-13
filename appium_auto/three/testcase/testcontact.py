@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+import pytest
+
 from appium_auto.three.page.app import App
 
 
