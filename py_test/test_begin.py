@@ -41,6 +41,6 @@ class TestDemo1:
 
 
 if __name__ == '__main__':
-    pytest.main(["-v", "-x", "test_begin.py"])
+    pytest.main(["-v", "-x", "test_begin.py::TestDemo1"])
     # pytest.main(['-v', '-s', 'TestDemo1'])
     # pytest.main()

@@ -41,11 +41,11 @@ class TestDemo2:
     def setup(self):
         print("setup")
 
-    def teardown_method(self):
-        print("类里面的方法执行后执行的：teardown_method")
-
     def teardown(self):
         print("teardown")
+
+    def teardown_method(self):
+        print("类里面的方法执行后执行的：teardown_method")
 
     def teardown_class(self):
         print("类被实例化或执行后执行的内容：teardown_class")
@@ -56,4 +56,4 @@ class TestDemo2:
 
 
 if __name__ == '__main__':
-    pytest.main(['-v', '-s', 'test_setup_teardown.py'])
+    pytest.main(['-v', '-s', 'test_setup_teardown.py::TestDemo2'])
