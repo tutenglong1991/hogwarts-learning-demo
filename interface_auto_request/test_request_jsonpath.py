@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import jsonpath
 import pytest
 import requests
+from jsonpath import jsonpath
 
 
 class TestJsonPath:
@@ -18,7 +18,6 @@ class TestJsonPath:
     def test_hogwarts_jsonpath(self):
         url = "https://home.testing-studio.com/categories.json"
         r = requests.get(url)
-        # print(JsonPath(r.json(), '$..name'))
         assert jsonpath(r.json(), '$..name')[0] == '霍格沃兹测试学院公众号'
 
 
